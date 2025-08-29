@@ -44,7 +44,7 @@ class Backbone_model(nn.Module):
 
         if self.backbone_name == 'densenet121':
             for param in self.backbone.parameters():
-                param.requires_grad = False
+                param.requires_grad = True
 
     def get_mean(self):
         if self.mean is False:
